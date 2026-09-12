@@ -49,8 +49,7 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
 zstyle '*' single-ignored show
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 
-LSCOLORS=Gxfxcxdxbxegedabagacad
-LS_COLORS='di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+export LS_COLORS='di=38;2;140;170;238:ln=38;2;140;170;238:ex=38;2;166;209;137:pi=38;2;181;191;226:so=38;2;181;191;226:bd=38;2;234;153;156:cd=38;2;234;153;156:or=38;2;231;130;132:mi=38;2;231;130;132:fi=38;2;198;208;245:su=38;2;202;158;230:sg=38;2;202;158;230:'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 fpath=("$XDG_DATA_HOME/zsh/completions" $fpath)
