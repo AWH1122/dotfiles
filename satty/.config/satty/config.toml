@@ -1,0 +1,4 @@
+[general]
+initial-tool = 'brush'
+floating-hack = true
+resize = { mode = 'smart' }
