@@ -18,3 +18,4 @@ vim.opt.foldlevelstart = 99
 vim.opt.gdefault = true
 vim.opt.signcolumn = "yes"
 vim.opt.guicursor:append("c:ver25")
+vim.opt.splitright = true
