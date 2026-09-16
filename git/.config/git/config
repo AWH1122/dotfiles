@@ -1,77 +1,77 @@
 [alias]
-	lg = log --graph --pretty=format:'%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n'
+    lg = log --graph --pretty=format:'%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n'
 
 [color "branch"]
-	current = magenta
-	local = default
-	plain = blue
-	remote = yellow
-	upstream = green
+    current = magenta
+    local = default
+    plain = blue
+    remote = yellow
+    upstream = green
 
 [core]
-	editor = nvim -f
-	excludesfile = /Users/alexhughes/.config/git/ignore
+    editor = nvim -f
+    excludesfile = /Users/alexhughes/.config/git/ignore
 
 [diff "jupyternotebook"]
-	command = git-nbdiffdriver diff --ignore-outputs --ignore-metadata --ignore-details
+    command = git-nbdiffdriver diff --ignore-outputs --ignore-metadata --ignore-details
 
 [difftool "nbdime"]
-	cmd = git-nbdifftool diff "$LOCAL" "$REMOTE" "$BASE"
-	prompt = false
+    cmd = git-nbdifftool diff "$LOCAL" "$REMOTE" "$BASE"
+    prompt = false
 
 [filter "nbstripout"]
-	clean = \"/Users/alexhughes/.local/pipx/venvs/nbstripout/bin/python\" -m nbstripout
-	required = true
-	smudge = cat
+    clean = \"/Users/alexhughes/.local/pipx/venvs/nbstripout/bin/python\" -m nbstripout
+    required = true
+    smudge = cat
 
 [init]
-	defaultbranch = main
+    defaultbranch = main
 
 [log]
-	abbrevcommit = true
-	graphcolors = blue,yellow,cyan,magenta,green,red
+    abbrevcommit = true
+    graphcolors = blue,yellow,cyan,magenta,green,red
 
 [merge]
     conflictStyle = zdiff3
 
 [merge "jupyternotebook"]
-	driver = git-nbmergedriver merge %O %A %B %L %P
-	name = jupyter notebook merge driver
+    driver = git-nbmergedriver merge %O %A %B %L %P
+    name = jupyter notebook merge driver
 
 [mergetool "nbdime"]
-	cmd = git-nbmergetool merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	prompt = false
+    cmd = git-nbmergetool merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    prompt = false
 
 [pull]
-	rebase = true
+    rebase = true
 
 [push]
-	autosetupremote = true
-	default = upstream
+    autosetupremote = true
+    default = upstream
 
 [status]
-	branch = true
-	short = true
-	showstash = true
+    branch = true
+    short = true
+    showstash = true
 
 # [url "git@github.com:AWH1122/"]
 # 	insteadof = "ah:"
 
 [user]
-	email = alex.w.h52@gmail.com
-	name = AWH1122
+    email = alex.w.h52@gmail.com
+    name = AWH1122
 # [url "git@github.com:"]
 # 	insteadOf = https://github.com/
 [rebase]
-	autoStash = true
-	updateRefs = true
+    autoStash = true
+    updateRefs = true
 [diff]
-	algorithm = histogram
-	colorMoved = zebra
-	mnemonicprefix = true
-	renames = copy
+    algorithm = histogram
+    colorMoved = zebra
+    mnemonicprefix = true
+    renames = copy
 [rerere]
-	enabled = true
+    enabled = true
 [fetch]
-	prune = true
-	pruneTags = true
+    prune = true
+    pruneTags = true
