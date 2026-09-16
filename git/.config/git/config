@@ -54,24 +54,23 @@
     short = true
     showstash = true
 
-# [url "git@github.com:AWH1122/"]
-# 	insteadof = "ah:"
-
 [user]
     email = alex.w.h52@gmail.com
     name = AWH1122
-# [url "git@github.com:"]
-# 	insteadOf = https://github.com/
+
 [rebase]
     autoStash = true
     updateRefs = true
+
 [diff]
     algorithm = histogram
     colorMoved = zebra
     mnemonicprefix = true
     renames = copy
+
 [rerere]
     enabled = true
+
 [fetch]
     prune = true
     pruneTags = true
