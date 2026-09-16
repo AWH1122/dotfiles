@@ -9,7 +9,7 @@
 	upstream = green
 
 [core]
-	editor = code --wait
+	editor = nvim -f
 	excludesfile = /Users/alexhughes/.config/git/ignore
     pager = delta
 
