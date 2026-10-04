@@ -7,7 +7,6 @@ alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc f
 
 alias grep='grep --color'
 alias cat='bat'
-alias cd='z'
 
 alias diff='diff --color'
 
