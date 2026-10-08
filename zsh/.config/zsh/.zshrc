@@ -22,8 +22,6 @@ setopt sharehistory
 setopt histfindnodups
 setopt histnostore
 
-# Shell options
-
 setopt autocd autopushd pushdminus
 setopt completeinword alwaystoend
 setopt extendedglob
@@ -93,6 +91,3 @@ add-zsh-hook -Uz precmd rehash_precmd
 
 source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/bindings.zsh"
-
-export PATH="$PATH:$HOME/.local/bin"
-
